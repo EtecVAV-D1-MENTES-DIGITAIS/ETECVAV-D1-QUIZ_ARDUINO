@@ -176,8 +176,62 @@ banco_perguntas = [
         "pergunta": "O comando noTone(8); serve para:",
         "alternativas": ["Parar o som gerado no pino 8", "Iniciar som no pino 8", "Ativar LED no pino 8", "Enviar sinal HIGH", "Reiniciar o Arduino"],
         "correta": "Parar o som gerado no pino 8"
+    },
+    {
+        "pergunta": "O que significa PWM?",
+        "alternativas": ["Pulse Width Modulation", "Power Wave Mode", "Positive Wave Mechanism", "Parallel Write Memory", "Programmable Wave Mode"],
+        "correta": "Pulse Width Modulation"
+    },
+    {
+        "pergunta": "Qual comando envia mensagens ao monitor serial?",
+        "alternativas": ["Serial.print()", "digitalWrite()", "analogRead()", "tone()", "pinMode()"],
+        "correta": "Serial.print()"
+    },
+    {
+        "pergunta": "O que o comando millis() retorna?",
+        "alternativas": ["Tempo em milissegundos desde o início do programa", "Número de ciclos do processador", "Valor de leitura do pino A0", "Contagem de loops", "Tempo do delay"],
+        "correta": "Tempo em milissegundos desde o início do programa"
+    },
+    {
+        "pergunta": "Qual componente converte energia elétrica em movimento rotacional?",
+        "alternativas": ["Motor DC", "Resistor", "Capacitor", "LDR", "Diodo"],
+        "correta": "Motor DC"
+    },
+    {
+        "pergunta": "O que é o Tinkercad?",
+        "alternativas": ["Um simulador de circuitos e Arduino online", "Um tipo de Arduino físico", "Uma placa controladora", "Um microcontrolador", "Um aplicativo de celular"],
+        "correta": "Um simulador de circuitos e Arduino online"
+    },
+    {
+        "pergunta": "O comando map(valor, 0, 1023, 0, 255); faz o quê?",
+        "alternativas": ["Converte a faixa de leitura analógica (0–1023) para 0–255", "Liga o pino 13", "Envia sinal digital", "Zera o programa", "Lê o pino 0"],
+        "correta": "Converte a faixa de leitura analógica (0–1023) para 0–255"
+    },
+    {
+        "pergunta": "O que o sensor DHT11 mede?",
+        "alternativas": ["Temperatura e umidade", "Distância e luz", "Som e vibração", "Movimento e cor", "Pressão e altitude"],
+        "correta": "Temperatura e umidade"
+    },
+    {
+        "pergunta": "O que é o RX/TX no Arduino?",
+        "alternativas": ["Pinos de comunicação serial (receber e transmitir)", "Sensores de luz", "Entradas analógicas", "Saídas PWM", "Linhas de alimentação"],
+        "correta": "Pinos de comunicação serial (receber e transmitir)"
+    },
+    {
+        "pergunta": "O que faz a função random(10)?",
+        "alternativas": ["Gera um número aleatório de 0 a 9", "Reinicia o programa", "Lê um sensor", "Ativa um LED", "Cria uma variável"],
+        "correta": "Gera um número aleatório de 0 a 9"
+    },
+    {
+        "pergunta": "Qual é o valor lógico de HIGH no Arduino?",
+        "alternativas": ["1 (ou 5V)", "0 (ou 0V)", "3.3V", "7V", "10V"],
+        "correta": "1 (ou 5V)"
+    },
+    {
+        "pergunta": "Qual é o valor lógico de LOW no Arduino?",
+        "alternativas": ["0 (ou 0V)", "1 (ou 5V)", "3.3V", "9V", "10V"],
+        "correta": "0 (ou 0V)"
     }
-    
 ]
 
 def main():
