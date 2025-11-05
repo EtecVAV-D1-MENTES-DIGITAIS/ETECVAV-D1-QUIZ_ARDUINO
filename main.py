@@ -93,7 +93,7 @@ banco_perguntas = [
         "correta": "Está conectado a um LED interno"
     },
     {
-        "pergunta": "O que significa “IDE” em Arduino IDE?",
+        "pergunta": "O que significa IDE em Arduino IDE?",
         "alternativas": ["Integrated Development Environment", "Internal Device Emulator", 
         "Input Data Encoder", "Interactive Design Editor", "Interactive Development Encoder"],
         "correta": "Integrated Development Environment"
@@ -148,7 +148,7 @@ banco_perguntas = [
         "correta": "Lê o estado (HIGH ou LOW) do pino 2"
     },
     {
-        "pergunta": "O símbolo “~” nos pinos do Arduino indica:",
+        "pergunta": "O símbolo de tio nos pinos do Arduino indica:",
         "alternativas": ["Pinos com função PWM", "Pinos analógicos", "Pinos reservados para GND", "Pinos de alimentação", "Pinos RX/TX"],
         "correta": "Pinos com função PWM"
     },
