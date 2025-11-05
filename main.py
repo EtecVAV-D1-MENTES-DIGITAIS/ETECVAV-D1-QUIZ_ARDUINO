@@ -42,6 +42,37 @@ def verificar_resposta(acertou):
         return 0.5
     else:
         return 0
+        
+def exibir_questao(numero, questao):
+    print(f"\nQuestão {numero}: {questao['pergunta']}")
+
+    alternativas = questao['alternativas'][:]
+    random.shuffle(alternativas)
+
+    indice = 0
+    while indice < len(alternativas):
+        letra = chr(65 + indice)
+        print(f"{letra}. {alternativas[indice]}")
+        indice += 1
+
+    resposta_usuario = input("Sua resposta: ").upper()
+    while resposta_usuario not in ['A', 'B', 'C', 'D', 'E']:
+        resposta_usuario = input("Digite apenas A, B, C, D ou E: ").upper()
+
+    indice_resposta = ord(resposta_usuario) - 65
+    return alternativas[indice_resposta] == questao['correta']
+
+def exibir_resultado(pontos):
+    print("\nPONTUAÇÃO FINAL")
+    print(f"Sua pontuação total: {pontos:.1f} / 10.0")
+    if pontos == 10:
+        print("Parabens! Você acertou todas as perguntas!")
+    elif pontos >= 7:
+        print("Muito bem! Acertou a maioria!")
+    elif pontos >= 5:
+        print("Quase lá! Dá pra melhorar!")
+    else:
+        print("Não desista! Tente mais vezes!")
 
 if __name__ == "__main__":
     main()
