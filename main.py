@@ -132,206 +132,52 @@ banco_perguntas = [
         "alternativas": ["Arduino Uno", "Arduino Nano", "Arduino Mega", "Arduino Uno Wifi Rev2", "Arduino Uno Wifi Integrated"],
         "correta": "Arduino Uno Wifi Rev2"
     },
-     {
-        "pergunta": "Qual a principal função dos pinos analógicos do Arduino?",
-        "alternativas": [
-            "Controlar motores de passo",
-            "Enviar dados via Bluetooth",
-            "Ler valores variáveis de sensores",
-            "Ligar e desligar LEDs"
-        ],
-        "correta": "Ler valores variáveis de sensores"
+    {
+        "pergunta": "O comando Serial.begin(9600); serve para:",
+        "alternativas": ["Iniciar a comunicação serial a 9600 bps", "Ativar o pino digital 13", "Controlar o servo motor", "Definir modo analógico", "Encerrar o programa"],
+        "correta": "Iniciar a comunicação serial a 9600 bps"
     },
     {
-        "pergunta": "Qual dessas opções representa uma placa da família Arduino?",
-        "alternativas": [
-            "Raspberry Pi",
-            "ESP32",
-            "Arduino Nano",
-            "Jetson Nano"
-        ],
-        "correta": "Arduino Nano"
+        "pergunta": "Qual biblioteca é usada para controlar servos no Arduino?",
+        "alternativas": ["Servo.h", "Motor.h", "PWM.h", "Stepper.h", "Serial.h"],
+        "correta": "Servo.h"
     },
     {
-        "pergunta": "O que o comando analogRead(A0); faz?",
-        "alternativas": [
-            "Lê um valor analógico do pino A0",
-            "Escreve um valor analógico no pino A0",
-            "Zera a leitura do pino A0",
-            "Liga o LED interno do Arduino"
-        ],
-        "correta": "Lê um valor analógico do pino A0"
+        "pergunta": "O comando digitalRead(2); faz o quê?",
+        "alternativas": ["Lê o estado (HIGH ou LOW) do pino 2", "Ativa o LED interno", "Lê um valor analógico", "Define o pino 2 como saída", "Reinicia o código"],
+        "correta": "Lê o estado (HIGH ou LOW) do pino 2"
     },
     {
-        "pergunta": "Para que serve o resistor em um circuito com LED e Arduino?",
-        "alternativas": [
-            "Aumentar a intensidade da luz",
-            "Diminuir a tensão para proteger o LED",
-            "Armazenar energia elétrica",
-            "Substituir o cabo de alimentação"
-        ],
-        "correta": "Diminuir a tensão para proteger o LED"
+        "pergunta": "O símbolo “~” nos pinos do Arduino indica:",
+        "alternativas": ["Pinos com função PWM", "Pinos analógicos", "Pinos reservados para GND", "Pinos de alimentação", "Pinos RX/TX"],
+        "correta": "Pinos com função PWM"
     },
     {
-        "pergunta": "O que é a função setup() no código Arduino?",
-        "alternativas": [
-            "Parte do código que repete continuamente",
-            "Onde são definidas configurações iniciais",
-            "Onde se criam variáveis temporárias",
-            "Onde o programa é finalizado"
-        ],
-        "correta": "Onde são definidas configurações iniciais"
+        "pergunta": "Qual a voltagem máxima suportada na entrada analógica do Arduino Uno?",
+        "alternativas": ["3,3V", "5V", "7V", "9V", "12V"],
+        "correta": "5V"
     },
     {
-        "pergunta": "Qual componente é usado para detectar luz em projetos com Arduino?",
-        "alternativas": [
-            "LDR",
-            "DHT11",
-            "Servo motor",
-            "Relé"
-        ],
-        "correta": "LDR"
+        "pergunta": "O comando tone(8, 1000); faz o quê?",
+        "alternativas": ["Gera um som de 1000 Hz no pino 8", "Lê o som do pino 8", "Liga o LED do pino 8", "Desativa o buzzer", "Ativa o motor"],
+        "correta": "Gera um som de 1000 Hz no pino 8"
     },
     {
-        "pergunta": "Qual é a função da porta VIN no Arduino?",
-        "alternativas": [
-            "Conectar o cabo USB",
-            "Medir temperatura",
-            "Receber alimentação externa (geralmente 7–12V)",
-            "Transmitir dados para o computador"
-        ],
-        "correta": "Receber alimentação externa (geralmente 7–12V)"
+        "pergunta": "Qual o nome do software usado para programar o Arduino?",
+        "alternativas": ["Arduino IDE", "Tinkercad", "MATLAB", "Proteus", "Code::Blocks"],
+        "correta": "Arduino IDE"
     },
     {
-        "pergunta": "Em qual tipo de pino o comando analogWrite() pode ser usado?",
-        "alternativas": [
-            "Apenas em pinos digitais marcados com “~”",
-            "Em qualquer pino analógico",
-            "Apenas no pino 13",
-            "Somente nos pinos de entrada"
-        ],
-        "correta": "Apenas em pinos digitais marcados com “~”"
+        "pergunta": "Qual a principal função do GND?",
+        "alternativas": ["Fornecer corrente positiva", "Atuar como terra (retorno de corrente)", "Medir tensão", "Enviar dados", "Regular energia"],
+        "correta": "Atuar como terra (retorno de corrente)"
     },
     {
-        "pergunta": "O que o componente servo motor faz em um projeto com Arduino?",
-        "alternativas": [
-            "Mede temperatura",
-            "Controla movimento angular preciso",
-            "Converte som em luz",
-            "Armazena dados"
-        ],
-        "correta": "Controla movimento angular preciso"
-    },
-    {
-        "pergunta": "Qual é a tensão de operação padrão da placa Arduino Uno?",
-        "alternativas": [
-            "3,3 volts",
-            "5 volts",
-            "7,5 volts",
-            "12 volts"
-        ],
-        "correta": "5 volts"
-    },
-    {
-        "pergunta": "O que é o Arduino?",
-        "alternativas": [
-            "Um tipo de sensor de temperatura",
-            "Uma plataforma de prototipagem eletrônica",
-            "Um software de edição de imagens",
-            "Um tipo de cabo USB"
-        ],
-        "correta": "Uma plataforma de prototipagem eletrônica"
-    },
-    {
-        "pergunta": "Para que serve a porta USB no Arduino?",
-        "alternativas": [
-            "Apenas para ligar LEDs",
-            "Para conectar sensores externos",
-            "Para programar e alimentar o Arduino",
-            "Para aumentar a memória do Arduino"
-        ],
-        "correta": "Para programar e alimentar o Arduino"
-    },
-    {
-        "pergunta": "O que significa o termo “sketch” no Arduino?",
-        "alternativas": [
-            "Um tipo de componente físico",
-            "Um código ou programa criado para o Arduino",
-            "Um sensor de movimento",
-            "Um desenho do circuito"
-        ],
-        "correta": "Um código ou programa criado para o Arduino"
-    },
-    {
-        "pergunta": "Qual linguagem de programação o Arduino usa principalmente?",
-        "alternativas": [
-            "Java",
-            "Python",
-            "C/C++",
-            "HTML"
-        ],
-        "correta": "C/C++"
-    },
-    {
-        "pergunta": "O que faz o pino GND no Arduino?",
-        "alternativas": [
-            "Envia sinal para o computador",
-            "É o pino de alimentação positiva",
-            "É o pino de terra (negativo do circuito)",
-            "Mede a corrente elétrica"
-        ],
-        "correta": "É o pino de terra (negativo do circuito)"
-    },
-    {
-        "pergunta": "O que acontece quando o pino 13 é acionado no Arduino Uno, por padrão?",
-        "alternativas": [
-            "Um LED interno acende",
-            "O Arduino desliga",
-            "O programa é apagado",
-            "O motor começa a girar"
-        ],
-        "correta": "Um LED interno acende"
-    },
-    {
-        "pergunta": "Qual componente é necessário para medir a distância usando Arduino?",
-        "alternativas": [
-            "Sensor ultrassônico",
-            "Motor DC",
-            "Sensor de luz LDR",
-            "Potenciômetro"
-        ],
-        "correta": "Sensor ultrassônico"
-    },
-    {
-        "pergunta": "O que o comando digitalWrite() faz no código Arduino?",
-        "alternativas": [
-            "Lê o valor de um sensor",
-            "Escreve um valor em um pino digital (HIGH ou LOW)",
-            "Define a velocidade do motor",
-            "Cria uma variável"
-        ],
-        "correta": "Escreve um valor em um pino digital (HIGH ou LOW)"
-    },
-    {
-        "pergunta": "Qual desses itens é hardware do Arduino?",
-        "alternativas": [
-            "IDE do Arduino",
-            "Cabo USB",
-            "Placa Arduino Uno",
-            "Código de programação"
-        ],
-        "correta": "Placa Arduino Uno"
-    },
-    {
-        "pergunta": "O que é necessário para o Arduino funcionar corretamente?",
-        "alternativas": [
-            "Apenas o cabo de energia",
-            "Um sensor e um resistor",
-            "Alimentação elétrica e um programa carregado",
-            "Um botão e um display"
-        ],
-        "correta": "Alimentação elétrica e um programa carregado"
+        "pergunta": "O comando noTone(8); serve para:",
+        "alternativas": ["Parar o som gerado no pino 8", "Iniciar som no pino 8", "Ativar LED no pino 8", "Enviar sinal HIGH", "Reiniciar o Arduino"],
+        "correta": "Parar o som gerado no pino 8"
     }
+    
 ]
 
 def main():
@@ -341,7 +187,6 @@ def main():
         if opcao == '1':
             print("\nIniciando o Quiz de Arduino...")
             perguntas_sorteadas = sortear_questoes(banco_perguntas)
-
             pontuacao = 0
             indice = 0
 
