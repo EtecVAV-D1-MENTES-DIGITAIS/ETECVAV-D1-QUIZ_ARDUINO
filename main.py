@@ -30,6 +30,18 @@ def mostrar_creditos():
 Alex, Ana Carolina, Arthur, Bianca e Helena
 Curso Técnico em Informática para Internet, 1°D
     """)
+    
+def sortear_questoes(banco):
+    qtd = 20
+    if len(banco) < 20:
+        qtd = len(banco)
+    return random.sample(banco, qtd)
+    
+def verificar_resposta(acertou):
+    if acertou:
+        return 0.5
+    else:
+        return 0
 
 if __name__ == "__main__":
     main()
