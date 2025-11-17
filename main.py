@@ -1,5 +1,5 @@
 import random
-
+# função pra mostrar o menu
 def mostrar_menu():
     print("\nBem vindos ao quiz sobre arduino!")
     print("1. Responder Quiz.")
@@ -14,6 +14,7 @@ def mostrar_menu():
         else:
             print("Opção inválida. Tente novamente.")
 
+# função pra mostrar as regras
 def mostrar_regras():
     print("\nREGRAS DO QUIZ:")
     print("""
@@ -23,26 +24,30 @@ def mostrar_regras():
 4. Ao final do jogo é mostrada sua pontuação.
 Bom jogo!
     """)
-    
+
+# função pra mostrar os créditos
 def mostrar_creditos():
     print("\nCriadores do jogo")
     print("""
 Alex, Ana Carolina, Arthur, Bianca e Helena
 Curso Técnico em Informática para Internet, 1°D
     """)
-    
+
+# função pra sortear questões
 def sortear_questoes(banco):
     qtd = 20
     if len(banco) < 20:
         qtd = len(banco)
     return random.sample(banco, qtd)
-    
+
+# função pra verificar a resposta
 def verificar_resposta(acertou):
     if acertou:
         return 0.5
     else:
         return 0
-        
+
+# função pra exibir o numero da questão      
 def exibir_questao(numero, questao):
     print(f"\nQuestão {numero}: {questao['pergunta']}")
 
@@ -62,6 +67,7 @@ def exibir_questao(numero, questao):
     indice_resposta = ord(resposta_usuario) - 65
     return alternativas[indice_resposta] == questao['correta']
 
+# função pra exibir o resultado
 def exibir_resultado(pontos):
     print("\nPONTUAÇÃO FINAL")
     print(f"Sua pontuação total: {pontos:.1f} / 10.0")
@@ -74,6 +80,7 @@ def exibir_resultado(pontos):
     else:
         print("Não desista! Tente mais vezes!")
 
+# banco das 50 perguntas
 banco_perguntas = [
     {
         "pergunta": "Qual é a principal função do Arduino?",
@@ -234,6 +241,7 @@ banco_perguntas = [
     }
 ]
 
+# função principal do jogo
 def main():
     while True:
         opcao = mostrar_menu()
